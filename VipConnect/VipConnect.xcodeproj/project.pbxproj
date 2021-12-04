@@ -21,6 +21,7 @@
 		62B66F802759395900887982 /* BookInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B66F752759395900887982 /* BookInteractor.swift */; };
 		62B66F822759395900887982 /* BookRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B66F782759395900887982 /* BookRouter.swift */; };
 		62B66F88275939E800887982 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 62B66F87275939E800887982 /* Alamofire */; };
+		9B0653B710606BCAC079D59C /* Pods_VipConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B66E0AFDD7B3C4A3A57C9B /* Pods_VipConnect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,9 @@
 		62B66F732759395900887982 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		62B66F752759395900887982 /* BookInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookInteractor.swift; sourceTree = "<group>"; };
 		62B66F782759395900887982 /* BookRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRouter.swift; sourceTree = "<group>"; };
+		66DE9F3BFDC3D7487202AC13 /* Pods-VipConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VipConnect.debug.xcconfig"; path = "Target Support Files/Pods-VipConnect/Pods-VipConnect.debug.xcconfig"; sourceTree = "<group>"; };
+		82B66E0AFDD7B3C4A3A57C9B /* Pods_VipConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VipConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA58EAEA34CD7DBEA1B4A850 /* Pods-VipConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VipConnect.release.xcconfig"; path = "Target Support Files/Pods-VipConnect/Pods-VipConnect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +51,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				62B66F88275939E800887982 /* Alamofire in Frameworks */,
+				9B0653B710606BCAC079D59C /* Pods_VipConnect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		531665CCC575BC9085BDCD2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82B66E0AFDD7B3C4A3A57C9B /* Pods_VipConnect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		62B66F41275938B600887982 = {
 			isa = PBXGroup;
 			children = (
 				62B66F4C275938B600887982 /* VipConnect */,
 				62B66F4B275938B600887982 /* Products */,
+				F6676D36ECF33692C1CF3B80 /* Pods */,
+				531665CCC575BC9085BDCD2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +153,16 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		F6676D36ECF33692C1CF3B80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66DE9F3BFDC3D7487202AC13 /* Pods-VipConnect.debug.xcconfig */,
+				FA58EAEA34CD7DBEA1B4A850 /* Pods-VipConnect.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62B66F5E275938B900887982 /* Build configuration list for PBXNativeTarget "VipConnect" */;
 			buildPhases = (
+				D7F82650844BF0C2B8175743 /* [CP] Check Pods Manifest.lock */,
 				62B66F46275938B600887982 /* Sources */,
 				62B66F47275938B600887982 /* Frameworks */,
 				62B66F48275938B600887982 /* Resources */,
+				4434A21B87D7F60A1C479191 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,6 +235,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4434A21B87D7F60A1C479191 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VipConnect/Pods-VipConnect-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VipConnect/Pods-VipConnect-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VipConnect/Pods-VipConnect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7F82650844BF0C2B8175743 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VipConnect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		62B66F46275938B600887982 /* Sources */ = {
@@ -348,6 +417,7 @@
 		};
 		62B66F5F275938B900887982 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66DE9F3BFDC3D7487202AC13 /* Pods-VipConnect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -367,6 +437,7 @@
 		};
 		62B66F60275938B900887982 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA58EAEA34CD7DBEA1B4A850 /* Pods-VipConnect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
